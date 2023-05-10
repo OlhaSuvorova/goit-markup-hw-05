@@ -141,14 +141,11 @@ img {
   /* color: var(--color-main-text); */
   color: var(--accent-pressed-state);
 
-  /* ============================!!!!!!================== */
-
   transition: color var(--transition);
 }
 .menu-link:hover,
 .menu-link:focus {
   color: var(--accent-pressed-state);
-  /* transition: var(--transition); */
 }
 
 .menu-link::after {
@@ -176,14 +173,13 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-secondary-text);
-  /* ===================!!!!!!!!!!!!!!!!!!!!!!!!=================================== */
+
   transition: color var(--transition);
 }
 
 .contacts:hover,
 .contacts:focus {
   color: var(--accent-pressed-state);
-  /* transition: var(--transition); */
 }
 
 .contacts-email {
@@ -249,15 +245,12 @@ img {
   margin: 0 auto;
   min-width: 169px;
 
-  /* =======================================!!!!!!!!!!!!!!!!====================== */
-
   transition: background-color var(--transition);
 }
 .modal-btn:hover,
 .modal-btn:focus {
   background-color: var(--accent-pressed-state);
   color: var(--primary-color);
-  /* transition: var(--transition); */
 }
 .portfolio-btn {
   font-family: inherit;
@@ -272,8 +265,6 @@ img {
   color: var(--accent);
   cursor: pointer;
 
-  /* =====================================!!!!!!!!!!!!!!!!!!================== */
-
   transition: color var(--transition), background-color var(--transition),
     box-shadow var(--transition), border-color var(--transition);
 }
@@ -287,7 +278,6 @@ img {
   border-radius: 4px;
   border: none;
   border: 1px solid transparent;
-  /* transition: var(--transition); */
 }
 
 .btn-list {
@@ -416,7 +406,6 @@ img {
 .social-list-link:hover,
 .social-list-link:focus {
   background-color: var(--accent-pressed-state);
-  /* transition: var(--transition); */
 }
 
 .social-list-icon {
@@ -452,15 +441,12 @@ img {
   border: 1px solid #8e8f99;
   border-radius: 4px;
 
-  /* =================!!!!!!!!!!!!!!!!!!!!!!================== */
-
   transition: border-color var(--transition), color var(--transition);
 }
 .customers-list-link:hover,
 .customers-list-link:focus {
   border-color: var(--accent-pressed-state);
   color: var(--accent-pressed-state);
-  /* transition: var(--transition); */
 }
 
 .customers-list-icon {
@@ -517,14 +503,11 @@ img {
   border-radius: 50%;
   background-color: var(--accent);
 
-  /* =========================!!!!!!!!!!!!!!!!!!!========================= */
-
   transition: background-color var(--transition);
 }
 .social-media-link:hover,
 .social-media-link:focus {
   background-color: #31d0aa;
-  /* transition: var(--transition); */
 }
 
 /* .........................Portfolio................... */
@@ -597,7 +580,6 @@ img {
   width: 100%;
   height: 100%;
   overflow: auto;
-  /* transform: translate(0, 100%); */
   transform: translateY(100%);
   transition: transform var(--transition);
   color: var(--color-main-cloud);
