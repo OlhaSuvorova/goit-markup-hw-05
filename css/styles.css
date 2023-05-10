@@ -138,7 +138,8 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--color-main-text);
+  /* color: var(--color-main-text); */
+  color: var(--accent-pressed-state);
 
   /* ============================!!!!!!================== */
 
@@ -452,7 +453,7 @@ img {
 
   /* =================!!!!!!!!!!!!!!!!!!!!!!================== */
 
-  transition: border-color var(--transition);
+  transition: border-color var(--transition), color var(--transition);
 }
 .customers-list-link:hover,
 .customers-list-link:focus {
@@ -651,7 +652,7 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0;
   cursor: pointer;
-  transition: background-color var(--transition);
+  transition: background-color var(--transition), border var(--transition);
 }
 .modal-close-btn:hover,
 .modal-close-btn:focus {
@@ -661,13 +662,14 @@ img {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   border: none;
+  fill: var(--primary-color);
 }
 
 .modal-close-btn-icon {
   transition: fill var(--transition);
 }
 
-.modal-close-btn-icon:hover,
+/* .modal-close-btn-icon:hover,
 .modal-close-btn-icon:focus {
   fill: var(--primary-color);
-}
+} */
