@@ -1,6 +1,5 @@
 :root {
   --primary-color: #ffffff;
-  --secondary-bg-color: #2e2f42;
   --color-main-text: #2e2f42;
   --color-main-cloud: #f4f4fd;
   --color-secondary-text: #434455;
@@ -138,17 +137,17 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  /* color: var(--color-main-text); */
-  color: var(--accent-pressed-state);
+  color: var(--color-main-text);
 
   transition: color var(--transition);
 }
+
 .menu-link:hover,
 .menu-link:focus {
   color: var(--accent-pressed-state);
 }
 
-.menu-link::after {
+.current-page::after {
   content: '';
   position: absolute;
   left: 0;
@@ -163,8 +162,12 @@ img {
   transition: opacity var(--transition);
 }
 
-.menu-link:hover::after {
+.current-page:hover::after {
   opacity: 1;
+}
+
+.current-page {
+  color: var(--accent-pressed-state);
 }
 
 /* .......................Contact..................... */
@@ -204,7 +207,7 @@ img {
   max-width: 1440px;
   margin: 0 auto;
   color: var(--primary-color);
-  background-color: var(--secondary-bg-color);
+  background-color: var(--color-main-text);
   text-align: center;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -461,7 +464,7 @@ img {
 /* ................................footer............................. */
 .address-footer {
   padding: 100px 0;
-  background: var(--secondary-bg-color);
+  background: var(--color-main-text);
   color: var(--color-main-cloud);
 }
 
@@ -644,7 +647,6 @@ img {
   background-color: var(--accent-pressed-state);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
   border: none;
   fill: var(--primary-color);
 }
